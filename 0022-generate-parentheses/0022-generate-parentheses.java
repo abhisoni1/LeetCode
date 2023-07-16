@@ -14,7 +14,7 @@ class Solution {
     public void doBackTracking(int openN, int closedN, int n){
         
         if( openN == closedN && openN == n){
-            strings.add(stack.stream().map(s -> s.toString()).collect(Collectors.joining("")));
+            strings.add(stack.stream().map(s -> s.toString()).collect(Collectors.joining()));
         }
         
         if( openN < n){
